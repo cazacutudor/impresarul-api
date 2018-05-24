@@ -10,7 +10,7 @@ class ImpresarioSpec extends Specification implements DomainUnitTest<Impresario>
         subject = new Impresario()
     }
 
-    void "Impresario - when name is blank will return error"() {
+    void "when name is blank will return error"() {
         when:
             domain.name = null
 
