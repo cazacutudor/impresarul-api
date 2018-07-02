@@ -1,11 +1,15 @@
 package impresarul.api
 
 class Talent {
-    String name
+    String firstName
+    String lastName
+    String phone
+    String email
+    String age
+    String domain
+    String gender
+    String description
+
 
     static belongsTo = [impresario: Impresario]
-
-    static constraints = {
-        name blank:false
-    }
 }

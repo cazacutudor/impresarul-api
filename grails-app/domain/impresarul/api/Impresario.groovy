@@ -1,12 +1,13 @@
 package impresarul.api
 
 class Impresario {
-    String name
+    String firstName
+    String lastName
+    String phone
+    String email
+    String age
+    String domain
 
     static belongsTo = [industry: Industry]
     static hasMany = [talents: Talent]
-
-    static constraints = {
-        name blank:false
-    }
 }
