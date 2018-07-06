@@ -6,7 +6,6 @@ class Impresario {
     String phone
     String email
     String age
-    String domain
 
     static belongsTo = [industry: Industry]
     static hasMany = [talents: Talent]
